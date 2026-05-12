@@ -6,8 +6,8 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:linear-gradient(to bottom right,#eef4ff,#fdfdff);
-    color:#222;
+    background:black;
+    color:white;
 }
 
 /* HEADER */
@@ -18,7 +18,7 @@ header{
     align-items:center;
     padding:20px 50px;
     background:linear-gradient(90deg,#1e3c72,#2a5298);
-    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    box-shadow:0 4px 15px rgba(0,0,0,0.4);
 }
 
 /* LOGO */
@@ -49,15 +49,15 @@ header{
 /* NAVBAR */
 
 nav{
-    background:white;
+    background:#111;
     padding:18px;
     text-align:center;
-    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+    border-bottom:2px solid #ff914d;
 }
 
 nav a{
     text-decoration:none;
-    color:#1e3c72;
+    color:white;
     margin:0 28px;
     font-size:20px;
     font-weight:bold;
@@ -65,16 +65,16 @@ nav a{
 }
 
 nav a:hover{
-    color:#ff6b35;
+    color:#ff914d;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 section{
     padding:50px;
 }
 
-/* SECTION HEADINGS */
+/* HEADINGS */
 
 .about-heading,
 .books-heading{
@@ -110,12 +110,12 @@ section{
 .about-text p{
     font-size:18px;
     line-height:1.9;
-    color:#444;
+    color:#f1f1f1;
     margin-bottom:25px;
 }
 
 .about-text h2{
-    color:#1e3c72;
+    color:#ff914d;
     margin-bottom:12px;
     margin-top:25px;
     font-size:24px;
@@ -133,8 +133,8 @@ section{
     height:240px;
     object-fit:cover;
     border-radius:50%;
-    border:8px solid white;
-    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+    border:8px solid #222;
+    box-shadow:0 8px 25px rgba(255,145,77,0.3);
     margin-top:80px;
     transition:0.4s;
 }
@@ -150,7 +150,7 @@ section{
     border-radius:14px;
     padding:14px;
     margin-bottom:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.12);
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
 }
 
 .main-book-title h2{
@@ -159,27 +159,27 @@ section{
     color:white;
 }
 
-/* MAIN BOOK SECTION */
+/* MAIN BOOK */
 
 .main-book-container{
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
     gap:25px;
-    background:white;
+    background:#111;
     padding:25px;
     border-radius:18px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    box-shadow:0 6px 20px rgba(0,0,0,0.5);
 }
 
-/* MAIN BOOK IMAGES */
+/* IMAGES */
 
 .main-book-left,
 .main-book-right{
     width:280px;
     border-radius:12px;
     transition:0.4s;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    box-shadow:0 5px 15px rgba(0,0,0,0.5);
 }
 
 .main-book-left:hover,
@@ -188,7 +188,7 @@ section{
     transform:translateY(-5px) scale(1.03);
 }
 
-/* MAIN BOOK TEXT */
+/* MAIN TEXT */
 
 .main-book-text{
     flex:1;
@@ -197,7 +197,7 @@ section{
 .main-book-text p{
     font-size:20px;
     line-height:1.9;
-    color:#333;
+    color:#f1f1f1;
     margin-bottom:20px;
 }
 
@@ -214,10 +214,10 @@ section{
 
 .book-card{
     width:33%;
-    background:white;
+    background:#111;
     border-radius:18px;
     padding:18px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    box-shadow:0 6px 20px rgba(0,0,0,0.4);
     transition:0.4s;
     border-top:6px solid #ff914d;
 }
@@ -235,7 +235,7 @@ section{
 .small-title h3{
     text-align:center;
     font-size:20px;
-    color:#1e3c72;
+    color:#ff914d;
 }
 
 /* BOOK CONTENT */
@@ -246,21 +246,21 @@ section{
     align-items:flex-start;
 }
 
-/* SMALL BOOK IMAGE */
+/* IMAGE */
 
 .book-content img{
     width:170px;
     border-radius:10px;
     transition:0.4s;
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    box-shadow:0 4px 12px rgba(0,0,0,0.4);
 }
 
-/* SMALL BOOK TEXT */
+/* TEXT */
 
 .book-content p{
     font-size:17px;
     line-height:1.7;
-    color:#444;
+    color:#f1f1f1;
 }
 
 /* FOOTER */
@@ -288,7 +288,7 @@ footer{
     height:70px;
     line-height:70px;
     border-radius:50%;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
 }
 
 .fa-instagram{
@@ -310,7 +310,7 @@ footer p{
     color:white;
 }
 
-/* RESPONSIVE */
+/* TABLET */
 
 @media(max-width:1100px){
 
@@ -327,18 +327,6 @@ footer p{
         width:100%;
     }
 
-    .about-container{
-        flex-direction:column;
-    }
-
-    .founder-section{
-        width:100%;
-    }
-
-    .founder-section img{
-        margin-top:20px;
-    }
-
     header{
         flex-direction:column;
         gap:15px;
@@ -351,7 +339,7 @@ footer p{
 @media(max-width:768px){
 
     section{
-        padding:25px;
+        padding:20px;
     }
 
     nav a{
@@ -367,8 +355,31 @@ footer p{
         font-size:22px;
     }
 
+    .about-container{
+        flex-direction:row;
+        gap:15px;
+    }
+
+    .about-text p{
+        font-size:14px;
+    }
+
+    .about-text h2{
+        font-size:18px;
+    }
+
+    .founder-section{
+        width:140px;
+    }
+
+    .founder-section img{
+        width:120px;
+        height:120px;
+        margin-top:40px;
+    }
+
     .main-book-text p{
-        font-size:17px;
+        font-size:16px;
     }
 
     .book-content{
